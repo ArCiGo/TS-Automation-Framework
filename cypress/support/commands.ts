@@ -23,7 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-Cypress.Commands.add('loginForm', (username, password) => {
+Cypress.Commands.add('loginForm', (username: string, password: string) => {
     if(username.length !==  0) {
         cy.get('#user-name').clear().type(username);
     } else {
@@ -39,7 +39,7 @@ Cypress.Commands.add('loginForm', (username, password) => {
     cy.get('#login-button').click();
 });
 
-Cypress.Commands.add('checkoutForm', (firstName, lastName, postalCode) => {
+Cypress.Commands.add('checkoutForm', (firstName: string, lastName: string, postalCode: string) => {
     if(firstName.length !== 0) {
         cy.get('#first-name').clear().type(firstName);
     } else {

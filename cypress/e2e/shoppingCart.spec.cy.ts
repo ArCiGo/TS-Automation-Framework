@@ -1,6 +1,6 @@
 describe('Shopping articles in the SWAG Labs store', () => {
 
-  let items;
+  let items: object;
 
   beforeEach(() => {
     cy.visit('https://www.saucedemo.com/');
