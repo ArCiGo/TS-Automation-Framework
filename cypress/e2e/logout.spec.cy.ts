@@ -10,4 +10,10 @@ describe('SWAG Labs logout', () => {
         cy.get('#logout_sidebar_link').click();
         cy.get('.login_logo').should('be.visible');
     });
+
+    it('should throw an error', () => {
+        cy.get('#r-menu-btn').click();
+        cy.get('#lk').click();
+        cy.get('.login_logo').should('be.visible');
+    });
 });

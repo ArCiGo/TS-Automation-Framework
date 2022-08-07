@@ -62,12 +62,6 @@ Cypress.Commands.add('checkoutForm', (firstName: string, lastName: string, posta
 });
 
 Cypress.Commands.add('addProductsToCart', () => {
-    /*products.forEach((item) => {
-        cy.contains('.inventory_item', item)
-        .find('button[class*="btn btn_primary"]')
-        .click();
-    });*/
-
     cy.fixture("products")
         .then((products) => {
             products.forEach(item => {
