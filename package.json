@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:open:cli": "cypress run --spec cypress/e2e"
+    "cypress:open:cli": "cypress run --spec cypress/e2e",
+    "html-report": "cypress run --spec cypress/e2e --browser chrome --headed"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.3.1"
+    "cypress": "^10.3.1",
+    "cypress-mochawesome-reporter": "^3.2.0"
   }
 }
