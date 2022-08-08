@@ -30,10 +30,10 @@ The SWAG Labs/Sauce Demo store, from Sauce Labs, was automated using TS + Cypres
 │   │   └── products.json
 │   ├── support/
 │   │   ├── commands.ts
-│   │   ├── e2e.js
+│   │   ├── e2e.ts
 │   │   └── index.ts
 │   └── tsconfig.json
-├── cypress.config.js
+├── cypress.config.ts
 ├── cypress.env.json
 ├── Dockerfile
 └── package.json
