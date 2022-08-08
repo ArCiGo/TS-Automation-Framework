@@ -11,7 +11,7 @@ describe('SWAG Labs logout', () => {
         cy.get('.login_logo').should('be.visible');
     });
 
-    it('should throw an error', () => {
+    it.skip('should throw an error', () => {
         cy.get('#r-menu-btn').click();
         cy.get('#lk').click();
         cy.get('.login_logo').should('be.visible');
