@@ -71,3 +71,30 @@ When you run the tests, a new folder is generated inside the `cypress` folder (`
 
 ![UI Report Sample](./Img_Report_01.png)
 ![UI Report Sample](./Img_Report_02.png)
+
+## Docker 🐋
+
+If you want to execute the tests using Docker, you can do the following.-
+
+```bash
+# Without a Dockerfile
+
+# Pull the Cypress Docker image you need to run the tests. You can use the latest one
+docker pull cypress/included:9.4.1
+
+# Execute the following command to see the info of the image
+docker run -it --entrypoint=cypress cypress/included:9.4.1 info
+
+# Then, execute the following command to run the tests inside of the container
+docker run -it -v $(pwd):/e2e -w /e2e cypress/included:9.4.1 --spec cypress/e2e --browser electron
+```
+
+```bash
+# With a Dockerfile
+
+# Execute the following command to compile the file. <YourVersionTag> may be any value you want
+docker build -t my-cypress-image:<YourVersionTag> .
+
+# Then, execute the following command to run the tests inside of the container
+docker run -i -v $(pwd):/my-cypress-project -t my-cypress-image:<YourVersionTag> --spec cypress/e2e
+```
