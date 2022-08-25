@@ -23,11 +23,9 @@ The SWAG Labs/Sauce Demo store, from Sauce Labs, was automated using TS + Cypres
 │       └── main.yml
 ├── cypress/
 │   ├── e2e/
-│   │   ├── login.spec.cy.ts
-│   │   ├── logout.spec.cy.ts
-│   │   └── shoppingCart.spec.cy.ts
+│   │   ├── spec.cy.ts
 │   ├── fixtures/
-│   │   └── products.json
+│   │   └── fixture.json
 │   ├── support/
 │   │   ├── commands.ts
 │   │   ├── e2e.ts
@@ -69,9 +67,6 @@ npm run cypress:open
 
 When you run the tests, a new folder is generated inside the `cypress` folder (`reports`). This folder contains the report for the executed tests. If a test fails, the report will include a screenshot to see what the failure was.
 
-![UI Report Sample](./Img_Report_01.png)
-![UI Report Sample](./Img_Report_02.png)
-
 ## Docker 🐋
 
 If you want to execute the tests using Docker, you can do the following.-
@@ -98,3 +93,5 @@ docker build -t my-cypress-image:<YourVersionTag> .
 # Then, execute the following command to run the tests inside of the container
 docker run -i -v $(pwd):/my-cypress-project -t my-cypress-image:<YourVersionTag> --spec cypress/e2e
 ```
+
+You can check in this repository a couple of samples made with [JS](https://github.com/ArCiGo/JS-Automation-Framework/tree/AutomationFrameworkSample_JS) and [TS](https://github.com/ArCiGo/JS-Automation-Framework/tree/AutomationFrameworkSample_TS).
