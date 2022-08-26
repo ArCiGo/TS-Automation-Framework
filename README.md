@@ -1,10 +1,8 @@
 # Automation Framework made with TS + Cypress
 
-The goal of this project was to put into practice my knowledge using this amazing tool for automation testing.
-
 ## The project 💻
 
-The SWAG Labs/Sauce Demo store, from Sauce Labs, was automated using TS + Cypress. It generates an HTML report for passed and failed tests. Also, this project has GitHub Actions and Docker. 
+A *Cypress* template to create new automation framework projects!
 
 ## Tools ⚙️
 
@@ -103,3 +101,7 @@ If you want to execute the tests using Docker, you can do the following in your 
 ```
 
 You can check in this repository a couple of samples made with [JS](https://github.com/ArCiGo/JS-Automation-Framework/tree/AutomationFrameworkSample_JS) and [TS](https://github.com/ArCiGo/JS-Automation-Framework/tree/AutomationFrameworkSample_TS).
+
+## Collaborations 👨‍🏭
+
+Do you want to collaborate or contribute in this project? No problem! I'm open to improvements, comments and suggestions. Just do a PR with your suggestions and we can discuss them 😀
