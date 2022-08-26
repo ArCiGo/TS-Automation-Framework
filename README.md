@@ -4,7 +4,7 @@ The goal of this project was to put into practice my knowledge using this amazin
 
 ## The project 💻
 
-The SWAG Labs/Sauce Demo store, from Sauce Labs, was automated using JS + Cypress. It generates an HTML report for passed and failed tests. Also, this project has GitHub Actions and Docker. 
+The **SWAG Labs/Sauce Demo** store, from **Sauce Labs**, was automated using *JS + Cypress*. It generates an HTML report for passed and failed tests. Also, this project has **GitHub Actions** and **Docker**. 
 
 ## Tools ⚙️
 
@@ -51,12 +51,10 @@ The following steps can be executed using a terminal (I use [hyper](https://hype
 ```
 2. In the path you cloned the repo, open the project folder and install the packages.-
 ```bash
-> cd JS-Automation-Framework
+> cd TS-Automation-Framework
 
 > npm i
 ```
-
-3. Delete the folders, files or branches you don't need.
 
 
 ## Run the tests ⚡
