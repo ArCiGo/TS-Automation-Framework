@@ -41,8 +41,6 @@ The **SWAG Labs/Sauce Demo** store, from **Sauce Labs**, was automated using *TS
 
 ## Setup 🛠️
 
-I developed the code using a Mac, but it should work on a PC.
-
 The following steps can be executed using a terminal (I use [hyper](https://hyper.is/)), or using the terminal provided by VS Code.
 
 1. Clone the repo on your computer at any path you want.-
