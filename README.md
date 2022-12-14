@@ -37,8 +37,6 @@ A *Cypress* template to create new automation framework projects!
 
 ## Setup 🛠️
 
-I developed the code using a Mac, but it should work on a PC.
-
 The following steps can be executed using a terminal (I use [hyper](https://hyper.is/)), or using the terminal provided by VS Code.
 
 1. Clone the repo on your computer at any path you want.-
