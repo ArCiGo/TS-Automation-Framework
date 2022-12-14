@@ -4,6 +4,8 @@
 
 A *Cypress* template to create new automation framework projects!
 
+**Before you continue reading:** *You can check in this repository a couple of samples made with [TS](https://github.com/ArCiGo/TS-Playwright-Automation-Framework/tree/AutomationFrameworkSample_TS) and [JS](https://github.com/ArCiGo/TS-Automation-Framework/tree/AutomationFrameworkSample_JS)*
+
 ## Tools ⚙️
 
 * *Cypress v10.3.1*.
