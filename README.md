@@ -58,6 +58,23 @@ The following steps can be executed using a terminal (I use [hyper](https://hype
 
 > npm i
 ```
+3. There is a *cypress.env.json* file without values. For demo purposes, you can fill it with these values.-
+
+```json
+{
+    "valid_user": {
+        "username": "standard_user",
+        "password": "secret_sauce"
+    },
+    "locked_user": {
+        "username": "locked_out_user"
+    },
+    "invalid_user": {
+        "username": "wrong_username",
+        "password": "wrong_password"
+    }
+}
+```
 
 ## Run the tests ⚡
 ```bash
