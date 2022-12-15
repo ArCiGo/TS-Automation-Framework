@@ -58,6 +58,8 @@ The following steps can be executed using a terminal (I use [hyper](https://hype
 
 3. Delete the folders, files or branches you don't need.
 
+4. **Optional:** In this project you'll find a cypress.env.json file that is empty. You can use it to define your environmental variables.
+
 ## Run the tests ⚡
 ```bash
 # If you don't want to open the Cypress GUI, you can execute the following commands:
