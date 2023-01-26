@@ -1,7 +1,5 @@
 describe('Shopping articles in the SWAG Labs store', () => {
 
-  
-
   beforeEach(() => {
     cy.visit('https://www.saucedemo.com/');
     cy.loginForm(Cypress.env('valid_user').username, Cypress.env('valid_user').password);
