@@ -62,6 +62,8 @@ Cypress.Commands.add('checkoutForm', (firstName: string, lastName: string, posta
 });
 
 Cypress.Commands.add('addProductsToCart', () => {
+    cy.get('.title').should('have.text', 'Products'); // Checking if I'm in the Products page
+
     cy.fixture("products")
         .then((products) => {
             products.forEach(item => {
@@ -70,4 +72,16 @@ Cypress.Commands.add('addProductsToCart', () => {
                 .click();     
             });
         });
+    
+    cy.get('#shopping_cart_container').click();
+});
+
+Cypress.Commands.add('validateProductsInCart', () => {
+    cy.fixture("products").then((product) => {
+        cy.get('div[class="inventory_item_name"]').then(($item) => {
+            return (Cypress.$.makeArray($item)).map((el) => el.innerText)
+        }).should('deep.equal', product);
+    });
+
+    cy.get('#checkout').click();
 });
